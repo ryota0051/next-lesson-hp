@@ -3,7 +3,7 @@ import Link from "next/link"
 import Image from "next/image"
 import HeaderLink from "./HeaderLink"
 
-const Layout = ({ children, title = "Hp by Nextjs" }) => {
+export default function Layout({ children, title = "Hp by Nextjs" }) {
   return (
     <div className="flex justify-center items-center flex-col min-h-screen text-gray-600 text-sm font-mono">
       <Head>
@@ -39,5 +39,3 @@ const Layout = ({ children, title = "Hp by Nextjs" }) => {
     </div>
   )
 }
-
-export default Layout
